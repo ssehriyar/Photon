@@ -17,7 +17,7 @@ public class CustomMatchmakingRoomController : MonoBehaviourPunCallbacks
 
     private void ClearPlayerListings()
     {
-        for (int i = _playersContainer.childCount; i >= 0; i--)
+        for (int i = _playersContainer.childCount; i > 0; i--)
         {
             Destroy(_playersContainer.GetChild(i).gameObject);
         }

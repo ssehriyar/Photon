@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class CustomMatchmakingLobbyController : MonoBehaviourPunCallbacks
 {
@@ -14,7 +15,7 @@ public class CustomMatchmakingLobbyController : MonoBehaviourPunCallbacks
     [SerializeField] private GameObject _lobbyConnectButton;
     [SerializeField] private GameObject _lobbyPanel;
     [SerializeField] private GameObject _mainPanel;
-    [SerializeField] private InputField _playerNameInput;
+    [SerializeField] private TMP_InputField _playerNameInput;
     [SerializeField] private GameObject _roomListingPrefab;
     [SerializeField] private Transform _roomsContainer;
 
