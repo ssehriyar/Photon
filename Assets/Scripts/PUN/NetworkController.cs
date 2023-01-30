@@ -1,17 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using Photon.Pun;
 
-public class NetworkController : MonoBehaviourPunCallbacks
+namespace MyGame
 {
-    private void Start()
+    public class NetworkController : MonoBehaviourPunCallbacks
     {
-        PhotonNetwork.ConnectUsingSettings();
-    }
+        private void Start()
+        {
+            PhotonNetwork.ConnectUsingSettings();
+        }
 
-    public override void OnConnectedToMaster()
-    {
-        base.OnConnectedToMaster();
+        public override void OnConnectedToMaster()
+        {
+            base.OnConnectedToMaster();
+        }
     }
 }
